@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject leaf; 
     public GameObject startMenu;
     public GameObject leafPanel;
-    Controller pc; 
+    Controller pc;
 
 
     // Start is called before the first frame update
