@@ -47,7 +47,7 @@ public class Controller : MonoBehaviour
 
         transform.Rotate(0, 80 * hAxis * Time.deltaTime, 0);
 
-        cc.Move(transform.forward * 25 * vAxis * Time.deltaTime);
+        cc.Move(transform.forward * 35 * vAxis * Time.deltaTime);
 
         if (Mathf.Abs(vAxis) > 0)
         {
