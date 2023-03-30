@@ -21,7 +21,7 @@ public class Controller : MonoBehaviour
     public GameObject winScreen; 
 
     float health = 100;
-    float boxHealth = 40;
+    float boxHealth = 16;
 
     public Image healthImage;
 
@@ -98,7 +98,7 @@ public class Controller : MonoBehaviour
 
         if (other.CompareTag("boxTwo"))
         {
-            if (boxHealth <= 25)
+            if (boxHealth <= 8)
             {
                 Destroy(other.gameObject);
             }
@@ -106,7 +106,7 @@ public class Controller : MonoBehaviour
 
         if (other.CompareTag("boxThree"))
         {
-            if (boxHealth <= 35)
+            if (boxHealth <= 12)
             {
                 Destroy(other.gameObject);
             }
@@ -114,7 +114,7 @@ public class Controller : MonoBehaviour
 
         if (other.CompareTag("boxFour"))
         {
-            if (boxHealth <= 10 && leafCount >= 2)
+            if (boxHealth <= 4 && leafCount >= 2)
             {
                 Destroy(other.gameObject);
             }
